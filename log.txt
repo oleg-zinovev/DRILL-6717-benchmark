@@ -1,0 +1,1210 @@
+# Detecting actual CPU count: 4 detected
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper
+# Parameters: (charList = ASCII, size = 100)
+
+# Run progress: 0,00% complete, ETA 00:13:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 3247018,837 ops/s
+# Warmup Iteration   2: 3313570,406 ops/s
+# Warmup Iteration   3: 3405899,605 ops/s
+Iteration   1: 3401603,246 ops/s
+Iteration   2: 3443026,856 ops/s
+Iteration   3: 3429922,489 ops/s
+Iteration   4: 3436764,770 ops/s
+Iteration   5: 3434721,996 ops/s
+Iteration   6: 3434241,909 ops/s
+Iteration   7: 3393601,165 ops/s
+Iteration   8: 3426260,627 ops/s
+Iteration   9: 3439975,435 ops/s
+Iteration  10: 3431902,252 ops/s
+
+# Run progress: 1,67% complete, ETA 00:13:11
+# Fork: 2 of 5
+# Warmup Iteration   1: 3285110,371 ops/s
+# Warmup Iteration   2: 3307766,842 ops/s
+# Warmup Iteration   3: 3358629,798 ops/s
+Iteration   1: 3360261,981 ops/s
+Iteration   2: 3368834,495 ops/s
+Iteration   3: 3424885,810 ops/s
+Iteration   4: 3432279,762 ops/s
+Iteration   5: 3415860,523 ops/s
+Iteration   6: 3423557,415 ops/s
+Iteration   7: 3418389,617 ops/s
+Iteration   8: 3375200,994 ops/s
+Iteration   9: 3401716,144 ops/s
+Iteration  10: 3431785,693 ops/s
+
+# Run progress: 3,33% complete, ETA 00:12:56
+# Fork: 3 of 5
+# Warmup Iteration   1: 3256170,133 ops/s
+# Warmup Iteration   2: 3316131,067 ops/s
+# Warmup Iteration   3: 3403878,811 ops/s
+Iteration   1: 3402260,856 ops/s
+Iteration   2: 3413247,731 ops/s
+Iteration   3: 3343990,916 ops/s
+Iteration   4: 3370345,780 ops/s
+Iteration   5: 3351489,915 ops/s
+Iteration   6: 3358152,733 ops/s
+Iteration   7: 3396284,072 ops/s
+Iteration   8: 3286785,191 ops/s
+Iteration   9: 3308654,567 ops/s
+Iteration  10: 3281254,375 ops/s
+
+# Run progress: 5,00% complete, ETA 00:12:42
+# Fork: 4 of 5
+# Warmup Iteration   1: 3187138,503 ops/s
+# Warmup Iteration   2: 3323855,272 ops/s
+# Warmup Iteration   3: 3327411,942 ops/s
+Iteration   1: 3336211,151 ops/s
+Iteration   2: 3415354,339 ops/s
+Iteration   3: 3440558,370 ops/s
+Iteration   4: 3439005,176 ops/s
+Iteration   5: 3441696,423 ops/s
+Iteration   6: 3434247,642 ops/s
+Iteration   7: 3513151,117 ops/s
+Iteration   8: 3462891,652 ops/s
+Iteration   9: 3472398,270 ops/s
+Iteration  10: 3430131,256 ops/s
+
+# Run progress: 6,67% complete, ETA 00:12:28
+# Fork: 5 of 5
+# Warmup Iteration   1: 3215966,239 ops/s
+# Warmup Iteration   2: 3300286,627 ops/s
+# Warmup Iteration   3: 3312746,662 ops/s
+Iteration   1: 3278994,691 ops/s
+Iteration   2: 3410796,403 ops/s
+Iteration   3: 3402024,412 ops/s
+Iteration   4: 3397861,175 ops/s
+Iteration   5: 3412966,631 ops/s
+Iteration   6: 3413430,076 ops/s
+Iteration   7: 3475454,764 ops/s
+Iteration   8: 3432355,645 ops/s
+Iteration   9: 3432277,322 ops/s
+Iteration  10: 3427227,300 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper":
+  3406125,863 ±(99.9%) 24028,142 ops/s [Average]
+  (min, avg, max) = (3278994,691, 3406125,863, 3513151,117), stdev = 48538,035
+  CI (99.9%): [3382097,721, 3430154,004] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper
+# Parameters: (charList = ASCII, size = 10000)
+
+# Run progress: 8,33% complete, ETA 00:12:14
+# Fork: 1 of 5
+# Warmup Iteration   1: 26242,248 ops/s
+# Warmup Iteration   2: 26565,893 ops/s
+# Warmup Iteration   3: 26781,333 ops/s
+Iteration   1: 26547,994 ops/s
+Iteration   2: 26607,125 ops/s
+Iteration   3: 25449,356 ops/s
+Iteration   4: 25547,384 ops/s
+Iteration   5: 25427,982 ops/s
+Iteration   6: 25525,405 ops/s
+Iteration   7: 25464,878 ops/s
+Iteration   8: 25490,614 ops/s
+Iteration   9: 25487,027 ops/s
+Iteration  10: 25426,672 ops/s
+
+# Run progress: 10,00% complete, ETA 00:12:01
+# Fork: 2 of 5
+# Warmup Iteration   1: 26389,113 ops/s
+# Warmup Iteration   2: 26832,767 ops/s
+# Warmup Iteration   3: 26763,170 ops/s
+Iteration   1: 26524,460 ops/s
+Iteration   2: 26578,761 ops/s
+Iteration   3: 25432,956 ops/s
+Iteration   4: 25490,243 ops/s
+Iteration   5: 25465,591 ops/s
+Iteration   6: 23103,708 ops/s
+Iteration   7: 25340,449 ops/s
+Iteration   8: 25136,389 ops/s
+Iteration   9: 25492,427 ops/s
+Iteration  10: 25363,888 ops/s
+
+# Run progress: 11,67% complete, ETA 00:11:48
+# Fork: 3 of 5
+# Warmup Iteration   1: 26476,747 ops/s
+# Warmup Iteration   2: 26813,957 ops/s
+# Warmup Iteration   3: 26952,330 ops/s
+Iteration   1: 26500,478 ops/s
+Iteration   2: 26777,551 ops/s
+Iteration   3: 25489,181 ops/s
+Iteration   4: 25492,091 ops/s
+Iteration   5: 25469,694 ops/s
+Iteration   6: 25478,221 ops/s
+Iteration   7: 25439,469 ops/s
+Iteration   8: 25474,705 ops/s
+Iteration   9: 25379,799 ops/s
+Iteration  10: 25474,850 ops/s
+
+# Run progress: 13,33% complete, ETA 00:11:34
+# Fork: 4 of 5
+# Warmup Iteration   1: 26200,293 ops/s
+# Warmup Iteration   2: 26717,375 ops/s
+# Warmup Iteration   3: 26882,544 ops/s
+Iteration   1: 26767,342 ops/s
+Iteration   2: 26649,789 ops/s
+Iteration   3: 25171,847 ops/s
+Iteration   4: 25409,724 ops/s
+Iteration   5: 25059,292 ops/s
+Iteration   6: 25302,058 ops/s
+Iteration   7: 25315,545 ops/s
+Iteration   8: 25105,443 ops/s
+Iteration   9: 25361,050 ops/s
+Iteration  10: 25339,796 ops/s
+
+# Run progress: 15,00% complete, ETA 00:11:21
+# Fork: 5 of 5
+# Warmup Iteration   1: 25284,347 ops/s
+# Warmup Iteration   2: 26808,195 ops/s
+# Warmup Iteration   3: 26713,719 ops/s
+Iteration   1: 26798,718 ops/s
+Iteration   2: 26687,485 ops/s
+Iteration   3: 25329,037 ops/s
+Iteration   4: 25300,431 ops/s
+Iteration   5: 25286,911 ops/s
+Iteration   6: 25352,204 ops/s
+Iteration   7: 25259,327 ops/s
+Iteration   8: 25283,552 ops/s
+Iteration   9: 25354,695 ops/s
+Iteration  10: 25170,729 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper":
+  25583,686 ±(99.9%) 314,383 ops/s [Average]
+  (min, avg, max) = (23103,708, 25583,686, 26798,718), stdev = 635,070
+  CI (99.9%): [25269,303, 25898,070] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper
+# Parameters: (charList = NON_ASCII, size = 100)
+
+# Run progress: 16,67% complete, ETA 00:11:08
+# Fork: 1 of 5
+# Warmup Iteration   1: 951064,904 ops/s
+# Warmup Iteration   2: 997888,487 ops/s
+# Warmup Iteration   3: 1082262,984 ops/s
+Iteration   1: 1070616,463 ops/s
+Iteration   2: 1079608,286 ops/s
+Iteration   3: 1074271,400 ops/s
+Iteration   4: 943584,311 ops/s
+Iteration   5: 822939,692 ops/s
+Iteration   6: 961843,248 ops/s
+Iteration   7: 1046435,408 ops/s
+Iteration   8: 1026666,683 ops/s
+Iteration   9: 1040215,814 ops/s
+Iteration  10: 1053357,684 ops/s
+
+# Run progress: 18,33% complete, ETA 00:10:54
+# Fork: 2 of 5
+# Warmup Iteration   1: 907117,419 ops/s
+# Warmup Iteration   2: 969693,674 ops/s
+# Warmup Iteration   3: 1027366,987 ops/s
+Iteration   1: 1016919,868 ops/s
+Iteration   2: 1028640,087 ops/s
+Iteration   3: 1022886,049 ops/s
+Iteration   4: 1019464,073 ops/s
+Iteration   5: 1012244,061 ops/s
+Iteration   6: 1005807,123 ops/s
+Iteration   7: 1006690,744 ops/s
+Iteration   8: 1014767,745 ops/s
+Iteration   9: 1012591,336 ops/s
+Iteration  10: 1009297,763 ops/s
+
+# Run progress: 20,00% complete, ETA 00:10:41
+# Fork: 3 of 5
+# Warmup Iteration   1: 933349,883 ops/s
+# Warmup Iteration   2: 1018055,239 ops/s
+# Warmup Iteration   3: 1040977,955 ops/s
+Iteration   1: 1043011,410 ops/s
+Iteration   2: 1042117,581 ops/s
+Iteration   3: 1039503,322 ops/s
+Iteration   4: 1033918,208 ops/s
+Iteration   5: 1025229,474 ops/s
+Iteration   6: 1027152,503 ops/s
+Iteration   7: 1018268,652 ops/s
+Iteration   8: 1024939,740 ops/s
+Iteration   9: 1018444,462 ops/s
+Iteration  10: 1008663,514 ops/s
+
+# Run progress: 21,67% complete, ETA 00:10:28
+# Fork: 4 of 5
+# Warmup Iteration   1: 937567,266 ops/s
+# Warmup Iteration   2: 1006710,901 ops/s
+# Warmup Iteration   3: 1063585,847 ops/s
+Iteration   1: 1045637,725 ops/s
+Iteration   2: 1061111,114 ops/s
+Iteration   3: 1058434,144 ops/s
+Iteration   4: 1049178,234 ops/s
+Iteration   5: 1049853,649 ops/s
+Iteration   6: 1046074,281 ops/s
+Iteration   7: 1019960,748 ops/s
+Iteration   8: 1024467,108 ops/s
+Iteration   9: 1031051,767 ops/s
+Iteration  10: 1020281,357 ops/s
+
+# Run progress: 23,33% complete, ETA 00:10:14
+# Fork: 5 of 5
+# Warmup Iteration   1: 867080,166 ops/s
+# Warmup Iteration   2: 1001433,473 ops/s
+# Warmup Iteration   3: 1034823,752 ops/s
+Iteration   1: 1034895,586 ops/s
+Iteration   2: 1035749,837 ops/s
+Iteration   3: 1030191,362 ops/s
+Iteration   4: 1028290,802 ops/s
+Iteration   5: 1025515,680 ops/s
+Iteration   6: 1020387,339 ops/s
+Iteration   7: 996141,239 ops/s
+Iteration   8: 1004370,765 ops/s
+Iteration   9: 1013448,778 ops/s
+Iteration  10: 1011547,866 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper":
+  1023133,722 ±(99.9%) 18635,224 ops/s [Average]
+  (min, avg, max) = (822939,692, 1023133,722, 1079608,286), stdev = 37644,074
+  CI (99.9%): [1004498,498, 1041768,945] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper
+# Parameters: (charList = NON_ASCII, size = 10000)
+
+# Run progress: 25,00% complete, ETA 00:10:01
+# Fork: 1 of 5
+# Warmup Iteration   1: 9560,302 ops/s
+# Warmup Iteration   2: 10634,990 ops/s
+# Warmup Iteration   3: 10779,148 ops/s
+Iteration   1: 10707,050 ops/s
+Iteration   2: 10709,412 ops/s
+Iteration   3: 10835,592 ops/s
+Iteration   4: 10859,494 ops/s
+Iteration   5: 10807,686 ops/s
+Iteration   6: 10731,874 ops/s
+Iteration   7: 10621,420 ops/s
+Iteration   8: 10509,670 ops/s
+Iteration   9: 10602,198 ops/s
+Iteration  10: 10643,243 ops/s
+
+# Run progress: 26,67% complete, ETA 00:09:47
+# Fork: 2 of 5
+# Warmup Iteration   1: 9568,186 ops/s
+# Warmup Iteration   2: 10669,906 ops/s
+# Warmup Iteration   3: 10664,599 ops/s
+Iteration   1: 10573,878 ops/s
+Iteration   2: 10709,526 ops/s
+Iteration   3: 9386,790 ops/s
+Iteration   4: 10734,665 ops/s
+Iteration   5: 10639,372 ops/s
+Iteration   6: 10569,654 ops/s
+Iteration   7: 10264,794 ops/s
+Iteration   8: 10297,759 ops/s
+Iteration   9: 10812,014 ops/s
+Iteration  10: 10665,287 ops/s
+
+# Run progress: 28,33% complete, ETA 00:09:34
+# Fork: 3 of 5
+# Warmup Iteration   1: 9474,043 ops/s
+# Warmup Iteration   2: 10762,607 ops/s
+# Warmup Iteration   3: 10767,716 ops/s
+Iteration   1: 10715,749 ops/s
+Iteration   2: 10917,411 ops/s
+Iteration   3: 10451,345 ops/s
+Iteration   4: 10708,958 ops/s
+Iteration   5: 10590,952 ops/s
+Iteration   6: 10708,692 ops/s
+Iteration   7: 10689,857 ops/s
+Iteration   8: 10382,264 ops/s
+Iteration   9: 10717,625 ops/s
+Iteration  10: 10779,244 ops/s
+
+# Run progress: 30,00% complete, ETA 00:09:21
+# Fork: 4 of 5
+# Warmup Iteration   1: 9613,412 ops/s
+# Warmup Iteration   2: 10815,656 ops/s
+# Warmup Iteration   3: 10769,700 ops/s
+Iteration   1: 10688,583 ops/s
+Iteration   2: 10738,577 ops/s
+Iteration   3: 10882,643 ops/s
+Iteration   4: 10784,194 ops/s
+Iteration   5: 10706,876 ops/s
+Iteration   6: 10776,624 ops/s
+Iteration   7: 10794,427 ops/s
+Iteration   8: 10639,456 ops/s
+Iteration   9: 10691,455 ops/s
+Iteration  10: 10649,904 ops/s
+
+# Run progress: 31,67% complete, ETA 00:09:07
+# Fork: 5 of 5
+# Warmup Iteration   1: 9618,877 ops/s
+# Warmup Iteration   2: 10825,630 ops/s
+# Warmup Iteration   3: 10795,152 ops/s
+Iteration   1: 10743,799 ops/s
+Iteration   2: 10698,122 ops/s
+Iteration   3: 10858,637 ops/s
+Iteration   4: 10669,522 ops/s
+Iteration   5: 10603,483 ops/s
+Iteration   6: 10643,088 ops/s
+Iteration   7: 10599,872 ops/s
+Iteration   8: 10471,631 ops/s
+Iteration   9: 10812,265 ops/s
+Iteration  10: 10848,153 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillOptimizedToUpper":
+  10652,896 ±(99.9%) 113,099 ops/s [Average]
+  (min, avg, max) = (9386,790, 10652,896, 10917,411), stdev = 228,467
+  CI (99.9%): [10539,796, 10765,995] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillToUpper
+# Parameters: (charList = ASCII, size = 100)
+
+# Run progress: 33,33% complete, ETA 00:08:54
+# Fork: 1 of 5
+# Warmup Iteration   1: 3284651,448 ops/s
+# Warmup Iteration   2: 3326238,687 ops/s
+# Warmup Iteration   3: 3413843,344 ops/s
+Iteration   1: 3350511,984 ops/s
+Iteration   2: 3377356,471 ops/s
+Iteration   3: 3374600,306 ops/s
+Iteration   4: 3394233,511 ops/s
+Iteration   5: 3373653,635 ops/s
+Iteration   6: 3390657,593 ops/s
+Iteration   7: 3385645,048 ops/s
+Iteration   8: 3379724,723 ops/s
+Iteration   9: 3389908,312 ops/s
+Iteration  10: 3387921,718 ops/s
+
+# Run progress: 35,00% complete, ETA 00:08:41
+# Fork: 2 of 5
+# Warmup Iteration   1: 3289464,894 ops/s
+# Warmup Iteration   2: 3298587,379 ops/s
+# Warmup Iteration   3: 3413927,680 ops/s
+Iteration   1: 3316002,210 ops/s
+Iteration   2: 3398116,062 ops/s
+Iteration   3: 3434029,828 ops/s
+Iteration   4: 3425888,218 ops/s
+Iteration   5: 3414746,101 ops/s
+Iteration   6: 3427851,256 ops/s
+Iteration   7: 3444118,679 ops/s
+Iteration   8: 3420465,923 ops/s
+Iteration   9: 3430407,673 ops/s
+Iteration  10: 3425520,039 ops/s
+
+# Run progress: 36,67% complete, ETA 00:08:27
+# Fork: 3 of 5
+# Warmup Iteration   1: 3267977,542 ops/s
+# Warmup Iteration   2: 3320047,934 ops/s
+# Warmup Iteration   3: 3445828,007 ops/s
+Iteration   1: 3385205,405 ops/s
+Iteration   2: 2838401,287 ops/s
+Iteration   3: 3265541,394 ops/s
+Iteration   4: 3412768,562 ops/s
+Iteration   5: 3421587,164 ops/s
+Iteration   6: 3435172,975 ops/s
+Iteration   7: 3155274,404 ops/s
+Iteration   8: 3432085,974 ops/s
+Iteration   9: 3405496,034 ops/s
+Iteration  10: 3415725,429 ops/s
+
+# Run progress: 38,33% complete, ETA 00:08:14
+# Fork: 4 of 5
+# Warmup Iteration   1: 3250325,690 ops/s
+# Warmup Iteration   2: 3335223,763 ops/s
+# Warmup Iteration   3: 3431022,452 ops/s
+Iteration   1: 3411033,419 ops/s
+Iteration   2: 3440596,761 ops/s
+Iteration   3: 3420295,053 ops/s
+Iteration   4: 3439676,922 ops/s
+Iteration   5: 3423391,367 ops/s
+Iteration   6: 3451342,658 ops/s
+Iteration   7: 3431604,654 ops/s
+Iteration   8: 3434822,611 ops/s
+Iteration   9: 3461179,431 ops/s
+Iteration  10: 3351988,125 ops/s
+
+# Run progress: 40,00% complete, ETA 00:08:00
+# Fork: 5 of 5
+# Warmup Iteration   1: 3278032,231 ops/s
+# Warmup Iteration   2: 3300109,080 ops/s
+# Warmup Iteration   3: 3366525,777 ops/s
+Iteration   1: 3313295,615 ops/s
+Iteration   2: 3364545,659 ops/s
+Iteration   3: 3413469,413 ops/s
+Iteration   4: 3418780,015 ops/s
+Iteration   5: 3407294,274 ops/s
+Iteration   6: 3400345,379 ops/s
+Iteration   7: 3415634,314 ops/s
+Iteration   8: 3415180,099 ops/s
+Iteration   9: 3424278,275 ops/s
+Iteration  10: 3418854,255 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillToUpper":
+  3387324,524 ±(99.9%) 46578,975 ops/s [Average]
+  (min, avg, max) = (2838401,287, 3387324,524, 3461179,431), stdev = 94091,834
+  CI (99.9%): [3340745,549, 3433903,500] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillToUpper
+# Parameters: (charList = ASCII, size = 10000)
+
+# Run progress: 41,67% complete, ETA 00:07:47
+# Fork: 1 of 5
+# Warmup Iteration   1: 26330,054 ops/s
+# Warmup Iteration   2: 26673,662 ops/s
+# Warmup Iteration   3: 26816,571 ops/s
+Iteration   1: 26454,832 ops/s
+Iteration   2: 26700,596 ops/s
+Iteration   3: 25149,144 ops/s
+Iteration   4: 25171,488 ops/s
+Iteration   5: 25219,436 ops/s
+Iteration   6: 25044,979 ops/s
+Iteration   7: 25100,816 ops/s
+Iteration   8: 24371,465 ops/s
+Iteration   9: 25163,847 ops/s
+Iteration  10: 25204,757 ops/s
+
+# Run progress: 43,33% complete, ETA 00:07:33
+# Fork: 2 of 5
+# Warmup Iteration   1: 26487,629 ops/s
+# Warmup Iteration   2: 26848,594 ops/s
+# Warmup Iteration   3: 26984,355 ops/s
+Iteration   1: 26676,788 ops/s
+Iteration   2: 25470,614 ops/s
+Iteration   3: 25291,090 ops/s
+Iteration   4: 25431,183 ops/s
+Iteration   5: 25153,031 ops/s
+Iteration   6: 25465,856 ops/s
+Iteration   7: 25460,920 ops/s
+Iteration   8: 25162,176 ops/s
+Iteration   9: 24339,006 ops/s
+Iteration  10: 25467,532 ops/s
+
+# Run progress: 45,00% complete, ETA 00:07:20
+# Fork: 3 of 5
+# Warmup Iteration   1: 26309,105 ops/s
+# Warmup Iteration   2: 26844,494 ops/s
+# Warmup Iteration   3: 26591,831 ops/s
+Iteration   1: 25265,964 ops/s
+Iteration   2: 26437,523 ops/s
+Iteration   3: 25196,100 ops/s
+Iteration   4: 25083,445 ops/s
+Iteration   5: 25423,547 ops/s
+Iteration   6: 25085,636 ops/s
+Iteration   7: 25120,404 ops/s
+Iteration   8: 25403,540 ops/s
+Iteration   9: 25211,490 ops/s
+Iteration  10: 25413,454 ops/s
+
+# Run progress: 46,67% complete, ETA 00:07:07
+# Fork: 4 of 5
+# Warmup Iteration   1: 26128,635 ops/s
+# Warmup Iteration   2: 26731,693 ops/s
+# Warmup Iteration   3: 26553,181 ops/s
+Iteration   1: 26641,202 ops/s
+Iteration   2: 26623,334 ops/s
+Iteration   3: 25327,649 ops/s
+Iteration   4: 25408,593 ops/s
+Iteration   5: 25404,659 ops/s
+Iteration   6: 25190,826 ops/s
+Iteration   7: 25348,944 ops/s
+Iteration   8: 24756,864 ops/s
+Iteration   9: 25080,976 ops/s
+Iteration  10: 25151,023 ops/s
+
+# Run progress: 48,33% complete, ETA 00:06:53
+# Fork: 5 of 5
+# Warmup Iteration   1: 26421,788 ops/s
+# Warmup Iteration   2: 26769,392 ops/s
+# Warmup Iteration   3: 26862,333 ops/s
+Iteration   1: 26698,149 ops/s
+Iteration   2: 26662,786 ops/s
+Iteration   3: 25225,958 ops/s
+Iteration   4: 25390,891 ops/s
+Iteration   5: 25254,068 ops/s
+Iteration   6: 25392,344 ops/s
+Iteration   7: 25270,785 ops/s
+Iteration   8: 25300,241 ops/s
+Iteration   9: 25297,816 ops/s
+Iteration  10: 25347,365 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillToUpper":
+  25438,303 ±(99.9%) 279,650 ops/s [Average]
+  (min, avg, max) = (24339,006, 25438,303, 26700,596), stdev = 564,908
+  CI (99.9%): [25158,652, 25717,953] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillToUpper
+# Parameters: (charList = NON_ASCII, size = 100)
+
+# Run progress: 50,00% complete, ETA 00:06:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 123334,055 ops/s
+# Warmup Iteration   2: 133869,967 ops/s
+# Warmup Iteration   3: 138679,546 ops/s
+Iteration   1: 137985,559 ops/s
+Iteration   2: 137525,055 ops/s
+Iteration   3: 137843,523 ops/s
+Iteration   4: 134399,681 ops/s
+Iteration   5: 134301,332 ops/s
+Iteration   6: 136157,759 ops/s
+Iteration   7: 135687,949 ops/s
+Iteration   8: 134686,793 ops/s
+Iteration   9: 135382,968 ops/s
+Iteration  10: 135598,910 ops/s
+
+# Run progress: 51,67% complete, ETA 00:06:27
+# Fork: 2 of 5
+# Warmup Iteration   1: 119692,919 ops/s
+# Warmup Iteration   2: 139752,324 ops/s
+# Warmup Iteration   3: 138968,034 ops/s
+Iteration   1: 137192,126 ops/s
+Iteration   2: 137806,416 ops/s
+Iteration   3: 138093,639 ops/s
+Iteration   4: 135805,573 ops/s
+Iteration   5: 132419,360 ops/s
+Iteration   6: 136313,506 ops/s
+Iteration   7: 135848,368 ops/s
+Iteration   8: 135921,451 ops/s
+Iteration   9: 135904,869 ops/s
+Iteration  10: 136175,816 ops/s
+
+# Run progress: 53,33% complete, ETA 00:06:13
+# Fork: 3 of 5
+# Warmup Iteration   1: 120015,373 ops/s
+# Warmup Iteration   2: 137180,112 ops/s
+# Warmup Iteration   3: 140107,360 ops/s
+Iteration   1: 139515,344 ops/s
+Iteration   2: 139476,483 ops/s
+Iteration   3: 138038,442 ops/s
+Iteration   4: 136434,039 ops/s
+Iteration   5: 132743,202 ops/s
+Iteration   6: 137158,018 ops/s
+Iteration   7: 137131,591 ops/s
+Iteration   8: 136078,111 ops/s
+Iteration   9: 133786,092 ops/s
+Iteration  10: 133035,271 ops/s
+
+# Run progress: 55,00% complete, ETA 00:06:00
+# Fork: 4 of 5
+# Warmup Iteration   1: 122845,799 ops/s
+# Warmup Iteration   2: 136420,314 ops/s
+# Warmup Iteration   3: 136140,657 ops/s
+Iteration   1: 133637,760 ops/s
+Iteration   2: 135750,707 ops/s
+Iteration   3: 134664,376 ops/s
+Iteration   4: 133779,664 ops/s
+Iteration   5: 130572,626 ops/s
+Iteration   6: 132384,916 ops/s
+Iteration   7: 132935,771 ops/s
+Iteration   8: 133820,447 ops/s
+Iteration   9: 132487,353 ops/s
+Iteration  10: 134783,787 ops/s
+
+# Run progress: 56,67% complete, ETA 00:05:47
+# Fork: 5 of 5
+# Warmup Iteration   1: 125585,308 ops/s
+# Warmup Iteration   2: 137724,381 ops/s
+# Warmup Iteration   3: 137115,510 ops/s
+Iteration   1: 137122,934 ops/s
+Iteration   2: 136124,304 ops/s
+Iteration   3: 136205,843 ops/s
+Iteration   4: 134468,325 ops/s
+Iteration   5: 135199,960 ops/s
+Iteration   6: 135897,098 ops/s
+Iteration   7: 133255,323 ops/s
+Iteration   8: 132659,708 ops/s
+Iteration   9: 133660,046 ops/s
+Iteration  10: 132922,182 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillToUpper":
+  135335,607 ±(99.9%) 985,089 ops/s [Average]
+  (min, avg, max) = (130572,626, 135335,607, 139515,344), stdev = 1989,929
+  CI (99.9%): [134350,518, 136320,697] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testDrillToUpper
+# Parameters: (charList = NON_ASCII, size = 10000)
+
+# Run progress: 58,33% complete, ETA 00:05:33
+# Fork: 1 of 5
+# Warmup Iteration   1: 1274,581 ops/s
+# Warmup Iteration   2: 1463,029 ops/s
+# Warmup Iteration   3: 1496,244 ops/s
+Iteration   1: 1485,693 ops/s
+Iteration   2: 1501,919 ops/s
+Iteration   3: 1475,227 ops/s
+Iteration   4: 1466,874 ops/s
+Iteration   5: 1459,387 ops/s
+Iteration   6: 1474,218 ops/s
+Iteration   7: 1476,740 ops/s
+Iteration   8: 1432,829 ops/s
+Iteration   9: 1464,849 ops/s
+Iteration  10: 1477,261 ops/s
+
+# Run progress: 60,00% complete, ETA 00:05:20
+# Fork: 2 of 5
+# Warmup Iteration   1: 1269,674 ops/s
+# Warmup Iteration   2: 1435,107 ops/s
+# Warmup Iteration   3: 1492,465 ops/s
+Iteration   1: 1481,608 ops/s
+Iteration   2: 1462,925 ops/s
+Iteration   3: 1468,279 ops/s
+Iteration   4: 1427,672 ops/s
+Iteration   5: 1433,692 ops/s
+Iteration   6: 1458,141 ops/s
+Iteration   7: 1458,933 ops/s
+Iteration   8: 1458,130 ops/s
+Iteration   9: 1448,965 ops/s
+Iteration  10: 1445,584 ops/s
+
+# Run progress: 61,67% complete, ETA 00:05:07
+# Fork: 3 of 5
+# Warmup Iteration   1: 1240,880 ops/s
+# Warmup Iteration   2: 1442,768 ops/s
+# Warmup Iteration   3: 1486,114 ops/s
+Iteration   1: 1461,847 ops/s
+Iteration   2: 1465,193 ops/s
+Iteration   3: 1446,095 ops/s
+Iteration   4: 1454,676 ops/s
+Iteration   5: 1425,297 ops/s
+Iteration   6: 1445,470 ops/s
+Iteration   7: 1433,707 ops/s
+Iteration   8: 1455,548 ops/s
+Iteration   9: 1470,146 ops/s
+Iteration  10: 1433,348 ops/s
+
+# Run progress: 63,33% complete, ETA 00:04:53
+# Fork: 4 of 5
+# Warmup Iteration   1: 1293,283 ops/s
+# Warmup Iteration   2: 1456,873 ops/s
+# Warmup Iteration   3: 1515,998 ops/s
+Iteration   1: 1510,073 ops/s
+Iteration   2: 1493,344 ops/s
+Iteration   3: 1498,977 ops/s
+Iteration   4: 1488,682 ops/s
+Iteration   5: 1483,842 ops/s
+Iteration   6: 1498,383 ops/s
+Iteration   7: 1484,857 ops/s
+Iteration   8: 1488,584 ops/s
+Iteration   9: 1510,760 ops/s
+Iteration  10: 1490,523 ops/s
+
+# Run progress: 65,00% complete, ETA 00:04:40
+# Fork: 5 of 5
+# Warmup Iteration   1: 1288,341 ops/s
+# Warmup Iteration   2: 1427,913 ops/s
+# Warmup Iteration   3: 1474,341 ops/s
+Iteration   1: 1469,338 ops/s
+Iteration   2: 1468,413 ops/s
+Iteration   3: 1455,016 ops/s
+Iteration   4: 1441,176 ops/s
+Iteration   5: 1435,706 ops/s
+Iteration   6: 1454,570 ops/s
+Iteration   7: 1442,500 ops/s
+Iteration   8: 1438,949 ops/s
+Iteration   9: 1453,556 ops/s
+Iteration  10: 1444,901 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testDrillToUpper":
+  1464,048 ±(99.9%) 11,036 ops/s [Average]
+  (min, avg, max) = (1425,297, 1464,048, 1510,760), stdev = 22,293
+  CI (99.9%): [1453,012, 1475,084] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testStringToUpper
+# Parameters: (charList = ASCII, size = 100)
+
+# Run progress: 66,67% complete, ETA 00:04:27
+# Fork: 1 of 5
+# Warmup Iteration   1: 2416955,496 ops/s
+# Warmup Iteration   2: 2762407,766 ops/s
+# Warmup Iteration   3: 2875686,063 ops/s
+Iteration   1: 2867139,227 ops/s
+Iteration   2: 2883147,885 ops/s
+Iteration   3: 2884224,630 ops/s
+Iteration   4: 2844301,380 ops/s
+Iteration   5: 2811486,073 ops/s
+Iteration   6: 2837527,378 ops/s
+Iteration   7: 2780526,542 ops/s
+Iteration   8: 2813255,966 ops/s
+Iteration   9: 2850793,460 ops/s
+Iteration  10: 2851203,766 ops/s
+
+# Run progress: 68,33% complete, ETA 00:04:13
+# Fork: 2 of 5
+# Warmup Iteration   1: 2494143,562 ops/s
+# Warmup Iteration   2: 2711771,278 ops/s
+# Warmup Iteration   3: 2904914,183 ops/s
+Iteration   1: 2902911,640 ops/s
+Iteration   2: 2874445,596 ops/s
+Iteration   3: 2877883,356 ops/s
+Iteration   4: 2851553,502 ops/s
+Iteration   5: 2843524,651 ops/s
+Iteration   6: 2766491,221 ops/s
+Iteration   7: 2828964,662 ops/s
+Iteration   8: 2843205,250 ops/s
+Iteration   9: 2824636,634 ops/s
+Iteration  10: 2861086,539 ops/s
+
+# Run progress: 70,00% complete, ETA 00:04:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 2523989,494 ops/s
+# Warmup Iteration   2: 2722481,786 ops/s
+# Warmup Iteration   3: 2826955,302 ops/s
+Iteration   1: 2817457,664 ops/s
+Iteration   2: 2833616,893 ops/s
+Iteration   3: 2845030,181 ops/s
+Iteration   4: 2794439,242 ops/s
+Iteration   5: 2702772,542 ops/s
+Iteration   6: 2775125,394 ops/s
+Iteration   7: 2678449,299 ops/s
+Iteration   8: 2746116,861 ops/s
+Iteration   9: 2801207,933 ops/s
+Iteration  10: 2814483,370 ops/s
+
+# Run progress: 71,67% complete, ETA 00:03:47
+# Fork: 4 of 5
+# Warmup Iteration   1: 2460176,696 ops/s
+# Warmup Iteration   2: 2758745,025 ops/s
+# Warmup Iteration   3: 2853009,850 ops/s
+Iteration   1: 2862946,992 ops/s
+Iteration   2: 2846042,997 ops/s
+Iteration   3: 2854375,267 ops/s
+Iteration   4: 2806333,679 ops/s
+Iteration   5: 2780095,156 ops/s
+Iteration   6: 2756531,819 ops/s
+Iteration   7: 2819838,483 ops/s
+Iteration   8: 2794088,939 ops/s
+Iteration   9: 2784440,706 ops/s
+Iteration  10: 2798819,569 ops/s
+
+# Run progress: 73,33% complete, ETA 00:03:33
+# Fork: 5 of 5
+# Warmup Iteration   1: 2438187,051 ops/s
+# Warmup Iteration   2: 2677865,226 ops/s
+# Warmup Iteration   3: 2895739,696 ops/s
+Iteration   1: 2881595,342 ops/s
+Iteration   2: 2886588,698 ops/s
+Iteration   3: 2562943,925 ops/s
+Iteration   4: 2754512,120 ops/s
+Iteration   5: 2656872,340 ops/s
+Iteration   6: 2622149,318 ops/s
+Iteration   7: 2845268,032 ops/s
+Iteration   8: 2832435,819 ops/s
+Iteration   9: 2795446,434 ops/s
+Iteration  10: 2816513,147 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testStringToUpper":
+  2809296,950 ±(99.9%) 33900,711 ops/s [Average]
+  (min, avg, max) = (2562943,925, 2809296,950, 2902911,640), stdev = 68481,113
+  CI (99.9%): [2775396,239, 2843197,661] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testStringToUpper
+# Parameters: (charList = ASCII, size = 10000)
+
+# Run progress: 75,00% complete, ETA 00:03:20
+# Fork: 1 of 5
+# Warmup Iteration   1: 25106,054 ops/s
+# Warmup Iteration   2: 28576,801 ops/s
+# Warmup Iteration   3: 28797,897 ops/s
+Iteration   1: 28275,323 ops/s
+Iteration   2: 29273,981 ops/s
+Iteration   3: 28347,540 ops/s
+Iteration   4: 27728,061 ops/s
+Iteration   5: 28393,228 ops/s
+Iteration   6: 28544,434 ops/s
+Iteration   7: 28809,681 ops/s
+Iteration   8: 28574,303 ops/s
+Iteration   9: 28533,776 ops/s
+Iteration  10: 29112,946 ops/s
+
+# Run progress: 76,67% complete, ETA 00:03:07
+# Fork: 2 of 5
+# Warmup Iteration   1: 24213,408 ops/s
+# Warmup Iteration   2: 28195,716 ops/s
+# Warmup Iteration   3: 28653,236 ops/s
+Iteration   1: 28622,765 ops/s
+Iteration   2: 28730,170 ops/s
+Iteration   3: 28795,880 ops/s
+Iteration   4: 28180,595 ops/s
+Iteration   5: 28409,386 ops/s
+Iteration   6: 28484,970 ops/s
+Iteration   7: 27979,312 ops/s
+Iteration   8: 28600,404 ops/s
+Iteration   9: 28058,878 ops/s
+Iteration  10: 27999,915 ops/s
+
+# Run progress: 78,33% complete, ETA 00:02:53
+# Fork: 3 of 5
+# Warmup Iteration   1: 25325,438 ops/s
+# Warmup Iteration   2: 28310,102 ops/s
+# Warmup Iteration   3: 28417,664 ops/s
+Iteration   1: 28394,106 ops/s
+Iteration   2: 28792,410 ops/s
+Iteration   3: 28559,633 ops/s
+Iteration   4: 27963,072 ops/s
+Iteration   5: 27677,284 ops/s
+Iteration   6: 28024,968 ops/s
+Iteration   7: 28445,440 ops/s
+Iteration   8: 28265,373 ops/s
+Iteration   9: 28506,133 ops/s
+Iteration  10: 28209,551 ops/s
+
+# Run progress: 80,00% complete, ETA 00:02:40
+# Fork: 4 of 5
+# Warmup Iteration   1: 24712,887 ops/s
+# Warmup Iteration   2: 27633,495 ops/s
+# Warmup Iteration   3: 28009,412 ops/s
+Iteration   1: 27877,437 ops/s
+Iteration   2: 27782,886 ops/s
+Iteration   3: 28220,682 ops/s
+Iteration   4: 27342,738 ops/s
+Iteration   5: 27899,845 ops/s
+Iteration   6: 27648,396 ops/s
+Iteration   7: 27967,077 ops/s
+Iteration   8: 28003,235 ops/s
+Iteration   9: 28083,688 ops/s
+Iteration  10: 27598,066 ops/s
+
+# Run progress: 81,67% complete, ETA 00:02:27
+# Fork: 5 of 5
+# Warmup Iteration   1: 24251,170 ops/s
+# Warmup Iteration   2: 27441,555 ops/s
+# Warmup Iteration   3: 27390,251 ops/s
+Iteration   1: 27334,925 ops/s
+Iteration   2: 27977,324 ops/s
+Iteration   3: 28461,413 ops/s
+Iteration   4: 28360,982 ops/s
+Iteration   5: 28126,933 ops/s
+Iteration   6: 28237,816 ops/s
+Iteration   7: 27988,882 ops/s
+Iteration   8: 27707,189 ops/s
+Iteration   9: 27614,216 ops/s
+Iteration  10: 27379,461 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testStringToUpper":
+  28198,134 ±(99.9%) 216,141 ops/s [Average]
+  (min, avg, max) = (27334,925, 28198,134, 29273,981), stdev = 436,616
+  CI (99.9%): [27981,993, 28414,275] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testStringToUpper
+# Parameters: (charList = NON_ASCII, size = 100)
+
+# Run progress: 83,33% complete, ETA 00:02:13
+# Fork: 1 of 5
+# Warmup Iteration   1: 919671,291 ops/s
+# Warmup Iteration   2: 1003539,837 ops/s
+# Warmup Iteration   3: 1055578,742 ops/s
+Iteration   1: 1054541,260 ops/s
+Iteration   2: 1058849,298 ops/s
+Iteration   3: 1050755,488 ops/s
+Iteration   4: 1045409,085 ops/s
+Iteration   5: 1042015,593 ops/s
+Iteration   6: 1042181,973 ops/s
+Iteration   7: 1039656,874 ops/s
+Iteration   8: 1031441,246 ops/s
+Iteration   9: 1024015,457 ops/s
+Iteration  10: 1030934,174 ops/s
+
+# Run progress: 85,00% complete, ETA 00:02:00
+# Fork: 2 of 5
+# Warmup Iteration   1: 911743,529 ops/s
+# Warmup Iteration   2: 995417,873 ops/s
+# Warmup Iteration   3: 1039691,323 ops/s
+Iteration   1: 1050784,417 ops/s
+Iteration   2: 1041732,581 ops/s
+Iteration   3: 1035837,811 ops/s
+Iteration   4: 1042028,621 ops/s
+Iteration   5: 1037599,790 ops/s
+Iteration   6: 1015920,078 ops/s
+Iteration   7: 1011477,221 ops/s
+Iteration   8: 1015143,175 ops/s
+Iteration   9: 1025452,474 ops/s
+Iteration  10: 1012010,244 ops/s
+
+# Run progress: 86,67% complete, ETA 00:01:46
+# Fork: 3 of 5
+# Warmup Iteration   1: 910295,154 ops/s
+# Warmup Iteration   2: 975589,807 ops/s
+# Warmup Iteration   3: 1030386,718 ops/s
+Iteration   1: 1025297,043 ops/s
+Iteration   2: 1017810,126 ops/s
+Iteration   3: 1017950,150 ops/s
+Iteration   4: 1011752,349 ops/s
+Iteration   5: 1005769,553 ops/s
+Iteration   6: 1007830,870 ops/s
+Iteration   7: 999901,220 ops/s
+Iteration   8: 976842,346 ops/s
+Iteration   9: 990740,086 ops/s
+Iteration  10: 983824,624 ops/s
+
+# Run progress: 88,33% complete, ETA 00:01:33
+# Fork: 4 of 5
+# Warmup Iteration   1: 914948,502 ops/s
+# Warmup Iteration   2: 984171,667 ops/s
+# Warmup Iteration   3: 1045719,094 ops/s
+Iteration   1: 1048163,222 ops/s
+Iteration   2: 1037076,543 ops/s
+Iteration   3: 1040980,171 ops/s
+Iteration   4: 1038720,410 ops/s
+Iteration   5: 1033638,132 ops/s
+Iteration   6: 1027705,713 ops/s
+Iteration   7: 1009608,665 ops/s
+Iteration   8: 1028389,927 ops/s
+Iteration   9: 1040599,319 ops/s
+Iteration  10: 1029134,342 ops/s
+
+# Run progress: 90,00% complete, ETA 00:01:20
+# Fork: 5 of 5
+# Warmup Iteration   1: 969392,854 ops/s
+# Warmup Iteration   2: 1060722,400 ops/s
+# Warmup Iteration   3: 1103992,796 ops/s
+Iteration   1: 1097201,753 ops/s
+Iteration   2: 1063514,793 ops/s
+Iteration   3: 1074444,196 ops/s
+Iteration   4: 1086093,349 ops/s
+Iteration   5: 1079921,916 ops/s
+Iteration   6: 1062784,865 ops/s
+Iteration   7: 1054897,250 ops/s
+Iteration   8: 1071800,988 ops/s
+Iteration   9: 1075818,961 ops/s
+Iteration  10: 1079029,154 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testStringToUpper":
+  1036500,578 ±(99.9%) 12998,765 ops/s [Average]
+  (min, avg, max) = (976842,346, 1036500,578, 1097201,753), stdev = 26258,148
+  CI (99.9%): [1023501,813, 1049499,343] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ozinoviev.JavaStringBenchmark.testStringToUpper
+# Parameters: (charList = NON_ASCII, size = 10000)
+
+# Run progress: 91,67% complete, ETA 00:01:06
+# Fork: 1 of 5
+# Warmup Iteration   1: 8867,814 ops/s
+# Warmup Iteration   2: 10452,004 ops/s
+# Warmup Iteration   3: 10664,425 ops/s
+Iteration   1: 10600,818 ops/s
+Iteration   2: 10796,636 ops/s
+Iteration   3: 9510,711 ops/s
+Iteration   4: 10219,231 ops/s
+Iteration   5: 10636,550 ops/s
+Iteration   6: 10719,446 ops/s
+Iteration   7: 10458,832 ops/s
+Iteration   8: 10675,878 ops/s
+Iteration   9: 10460,108 ops/s
+Iteration  10: 10754,293 ops/s
+
+# Run progress: 93,33% complete, ETA 00:00:53
+# Fork: 2 of 5
+# Warmup Iteration   1: 9613,489 ops/s
+# Warmup Iteration   2: 10580,595 ops/s
+# Warmup Iteration   3: 10852,396 ops/s
+Iteration   1: 10788,267 ops/s
+Iteration   2: 10768,489 ops/s
+Iteration   3: 10962,151 ops/s
+Iteration   4: 10873,842 ops/s
+Iteration   5: 10875,723 ops/s
+Iteration   6: 10714,022 ops/s
+Iteration   7: 10678,696 ops/s
+Iteration   8: 10672,222 ops/s
+Iteration   9: 10475,919 ops/s
+Iteration  10: 10464,088 ops/s
+
+# Run progress: 95,00% complete, ETA 00:00:40
+# Fork: 3 of 5
+# Warmup Iteration   1: 9680,378 ops/s
+# Warmup Iteration   2: 10484,231 ops/s
+# Warmup Iteration   3: 10847,513 ops/s
+Iteration   1: 10826,360 ops/s
+Iteration   2: 10987,744 ops/s
+Iteration   3: 10905,448 ops/s
+Iteration   4: 10994,747 ops/s
+Iteration   5: 10872,132 ops/s
+Iteration   6: 10901,195 ops/s
+Iteration   7: 10881,126 ops/s
+Iteration   8: 10757,552 ops/s
+Iteration   9: 10887,242 ops/s
+Iteration  10: 10612,425 ops/s
+
+# Run progress: 96,67% complete, ETA 00:00:26
+# Fork: 4 of 5
+# Warmup Iteration   1: 9516,116 ops/s
+# Warmup Iteration   2: 10451,805 ops/s
+# Warmup Iteration   3: 10507,963 ops/s
+Iteration   1: 10707,869 ops/s
+Iteration   2: 10630,539 ops/s
+Iteration   3: 10751,621 ops/s
+Iteration   4: 10766,943 ops/s
+Iteration   5: 10623,680 ops/s
+Iteration   6: 10665,256 ops/s
+Iteration   7: 10617,614 ops/s
+Iteration   8: 10549,827 ops/s
+Iteration   9: 10709,493 ops/s
+Iteration  10: 10832,160 ops/s
+
+# Run progress: 98,33% complete, ETA 00:00:13
+# Fork: 5 of 5
+# Warmup Iteration   1: 9537,397 ops/s
+# Warmup Iteration   2: 10618,040 ops/s
+# Warmup Iteration   3: 10587,239 ops/s
+Iteration   1: 10589,696 ops/s
+Iteration   2: 10586,605 ops/s
+Iteration   3: 10576,516 ops/s
+Iteration   4: 10461,639 ops/s
+Iteration   5: 10246,304 ops/s
+Iteration   6: 10588,221 ops/s
+Iteration   7: 10587,299 ops/s
+Iteration   8: 10546,494 ops/s
+Iteration   9: 10796,282 ops/s
+Iteration  10: 10718,432 ops/s
+
+
+Result "ozinoviev.JavaStringBenchmark.testStringToUpper":
+  10665,688 ±(99.9%) 117,980 ops/s [Average]
+  (min, avg, max) = (9510,711, 10665,688, 10994,747), stdev = 238,326
+  CI (99.9%): [10547,707, 10783,668] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:13:21
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                      (charList)  (size)   Mode  Cnt        Score       Error  Units
+JavaStringBenchmark.testDrillOptimizedToUpper       ASCII     100  thrpt   50  3406125,863 ± 24028,142  ops/s
+JavaStringBenchmark.testDrillOptimizedToUpper       ASCII   10000  thrpt   50    25583,686 ±   314,383  ops/s
+JavaStringBenchmark.testDrillOptimizedToUpper   NON_ASCII     100  thrpt   50  1023133,722 ± 18635,224  ops/s
+JavaStringBenchmark.testDrillOptimizedToUpper   NON_ASCII   10000  thrpt   50    10652,896 ±   113,099  ops/s
+JavaStringBenchmark.testDrillToUpper                ASCII     100  thrpt   50  3387324,524 ± 46578,975  ops/s
+JavaStringBenchmark.testDrillToUpper                ASCII   10000  thrpt   50    25438,303 ±   279,650  ops/s
+JavaStringBenchmark.testDrillToUpper            NON_ASCII     100  thrpt   50   135335,607 ±   985,089  ops/s
+JavaStringBenchmark.testDrillToUpper            NON_ASCII   10000  thrpt   50     1464,048 ±    11,036  ops/s
+JavaStringBenchmark.testStringToUpper               ASCII     100  thrpt   50  2809296,950 ± 33900,711  ops/s
+JavaStringBenchmark.testStringToUpper               ASCII   10000  thrpt   50    28198,134 ±   216,141  ops/s
+JavaStringBenchmark.testStringToUpper           NON_ASCII     100  thrpt   50  1036500,578 ± 12998,765  ops/s
+JavaStringBenchmark.testStringToUpper           NON_ASCII   10000  thrpt   50    10665,688 ±   117,980  ops/s
