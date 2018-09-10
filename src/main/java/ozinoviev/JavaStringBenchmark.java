@@ -34,12 +34,9 @@ package ozinoviev;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
 
 @State(Scope.Thread)
@@ -56,6 +53,7 @@ public class JavaStringBenchmark {
 
     int bufferSize;
     ByteBuf buffer;
+    ByteBuf output;
 
     @SuppressWarnings("unused")
     @Setup
@@ -68,32 +66,34 @@ public class JavaStringBenchmark {
                 .resetReaderIndex();
 
         bufferSize = bytes.length;
+
+        output = Unpooled.directBuffer(bufferSize);
     }
 
     @Benchmark
-    public void testBenZviToUpper(Blackhole blackhole) {
+    public void testBenZviToUpper() {
         byte[] bytes = new byte[bufferSize];
         buffer.getBytes(0, bytes);
         String str = new String(bytes, StandardCharsets.UTF_8);
         bytes = str.toUpperCase().getBytes(StandardCharsets.UTF_8);
-        blackhole.consume(bytes);
+        output.setBytes(0, bytes);
     }
 
     @Benchmark
-    public void testOZToUpper(Blackhole blackhole) {
+    public void testOZToUpper() {
 
         for (int id = 0; id < bufferSize; id++) {
             byte currentByte = buffer.getByte(id);
 
             int length = utf8CharLen(currentByte);
             if (length == 1) {
-                blackhole.consume(Character.toUpperCase(currentByte));
+                output.setByte(id, Character.toUpperCase(currentByte));
             } else {
                 byte[] symbolBytes = new byte[length];
                 buffer.getBytes(id, symbolBytes);
 
                 byte[] encoded = new String(symbolBytes, StandardCharsets.UTF_8).toUpperCase().getBytes(StandardCharsets.UTF_8);
-                blackhole.consume(encoded);
+                output.setBytes(id, encoded);
 
                 id += length - 1;
             }
@@ -103,47 +103,51 @@ public class JavaStringBenchmark {
     @Benchmark
     public void testMergedToUpper(Blackhole blackhole) {
 
-        for (int id = 0; id < bufferSize; id++) {
+        int id;
+        for (id = 0; id < bufferSize; id++) {
             byte currentByte = buffer.getByte(id);
 
             int length = utf8CharLen(currentByte);
             if (length == 1) {
-                blackhole.consume(Character.toUpperCase(currentByte));
+                output.setByte(id, Character.toUpperCase(currentByte));
             } else {
-                byte[] remaining = new byte[bufferSize - id];
-                buffer.getBytes(id, remaining);
-
-                byte[] encoded = new String(remaining, StandardCharsets.UTF_8).toUpperCase().getBytes(StandardCharsets.UTF_8);
-                blackhole.consume(encoded);
-                return;
+                break;
             }
+        }
+
+        if (id != bufferSize) {
+            byte[] remaining = new byte[bufferSize - id];
+            buffer.getBytes(id, remaining);
+
+            byte[] encoded = new String(remaining, StandardCharsets.UTF_8).toUpperCase().getBytes(StandardCharsets.UTF_8);
+            output.setBytes(id, encoded);
         }
     }
 
     @Benchmark
-    public void testBenZviToLower(Blackhole blackhole) {
+    public void testBenZviToLower() {
         byte[] bytes = new byte[bufferSize];
         buffer.getBytes(0, bytes);
         String str = new String(bytes, StandardCharsets.UTF_8);
         bytes = str.toLowerCase().getBytes(StandardCharsets.UTF_8);
-        blackhole.consume(bytes);
+        output.setBytes(0, bytes);
     }
 
     @Benchmark
-    public void testOZToLower(Blackhole blackhole) {
+    public void testOZToLower() {
 
         for (int id = 0; id < bufferSize; id++) {
             byte currentByte = buffer.getByte(id);
 
             int length = utf8CharLen(currentByte);
             if (length == 1) {
-                blackhole.consume(Character.toLowerCase(currentByte));
+                output.setByte(id, Character.toLowerCase(currentByte));
             } else {
                 byte[] symbolBytes = new byte[length];
                 buffer.getBytes(id, symbolBytes);
 
                 byte[] encoded = new String(symbolBytes, StandardCharsets.UTF_8).toLowerCase().getBytes(StandardCharsets.UTF_8);
-                blackhole.consume(encoded);
+                output.setBytes(id, encoded);
 
                 id += length - 1;
             }
@@ -152,21 +156,24 @@ public class JavaStringBenchmark {
 
     @Benchmark
     public void testMergedToLower(Blackhole blackhole) {
-
-        for (int id = 0; id < bufferSize; id++) {
+        int id;
+        for (id = 0; id < bufferSize; id++) {
             byte currentByte = buffer.getByte(id);
 
             int length = utf8CharLen(currentByte);
             if (length == 1) {
                 blackhole.consume(Character.toLowerCase(currentByte));
             } else {
-                byte[] remaining = new byte[bufferSize - id];
-                buffer.getBytes(id, remaining);
-
-                byte[] encoded = new String(remaining, StandardCharsets.UTF_8).toLowerCase().getBytes(StandardCharsets.UTF_8);
-                blackhole.consume(encoded);
-                return;
+                break;
             }
+        }
+
+        if (id != bufferSize) {
+            byte[] remaining = new byte[bufferSize - id];
+            buffer.getBytes(id, remaining);
+
+            byte[] encoded = new String(remaining, StandardCharsets.UTF_8).toLowerCase().getBytes(StandardCharsets.UTF_8);
+            output.setBytes(id, encoded);
         }
     }
 
