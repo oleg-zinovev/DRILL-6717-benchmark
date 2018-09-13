@@ -101,7 +101,7 @@ public class JavaStringBenchmark {
     }
 
     @Benchmark
-    public void testMergedToUpper(Blackhole blackhole) {
+    public void testMergedToUpper() {
 
         int id;
         for (id = 0; id < bufferSize; id++) {
@@ -155,14 +155,14 @@ public class JavaStringBenchmark {
     }
 
     @Benchmark
-    public void testMergedToLower(Blackhole blackhole) {
+    public void testMergedToLower() {
         int id;
         for (id = 0; id < bufferSize; id++) {
             byte currentByte = buffer.getByte(id);
 
             int length = utf8CharLen(currentByte);
             if (length == 1) {
-                blackhole.consume(Character.toLowerCase(currentByte));
+                output.setByte(id, Character.toLowerCase(currentByte));
             } else {
                 break;
             }
